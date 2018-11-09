@@ -58,6 +58,20 @@ git clone https://github.com/firedot/kitchen_test-ec2_example.git
 cd kitchen_test-ec2_example
 ```
 
+- Create the following Terraform environment variables: 
+
+```¬
+export TF_VAR_ami_id="<your_ami_id>"
+export TF_VAR_aws_access_key="<your_aws_access_key>"¬
+export TF_VAR_aws_secret_key=<your_aws_secret_key>¬
+
+# Please note the in the example the kitchen_test key pair was created in AWS EC2
+export TF_VAR_key_name="kitchen_test"¬
+export TF_VAR_region_id="us-east-2"¬
+export TF_VAR_vpc_security_group_ids='["<your_security_group_id1>", "<your_security_group_id2>"]¬'
+export TF_VAR_ssh_username="ubuntu"
+```
+
 - Use Bundler to install the ruby gems needed to perform the testing
 
 ```
@@ -75,6 +89,10 @@ bundle exec kitchen converge
 ```
 bundle exec kitchen verify
 ```
+
+- If the test was successful (in this case, the OS should be Ubuntu), you will recieve an output similar to the one on the picture below
+
+![Alt text](pics/kitchen_ec2_success.png?raw=true "Successful test")
 
 - Run the following command to destroy your environment
 
