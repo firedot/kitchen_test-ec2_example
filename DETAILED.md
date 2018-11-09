@@ -212,6 +212,11 @@ resource "aws_instance" "example" {
 }
 
 ```
+- Create a ```testing.tfvars``` file
+
+```
+touch testing.tfvars
+```
 
 - Create a terraform configuration file, that will contain your configuration variables
 
@@ -249,7 +254,7 @@ output "public_dns" {
 - Add the the Terraform configuration files for commit
 
 ```
-git add main.tf output.tf variables.tf
+git add main.tf output.tf variables.tf testing.tfvars
 ```
 - Commit the changes for upload to the Remote repository
 
@@ -355,48 +360,6 @@ git push --set-upstream origin f-addDETAILED
 - Merge the pull request to the master branch
 - Go back to your local repository
 
-- Checkout to the master branch
-
-```
-git checkout master
-```
-
-- Pull the changes from the remote repository
-
-```
-git pull origin master
-```
-- Create a new branch ```addMissingFile```
-```
-git checkout -b "addMissingFile"
-```
-
-- Create a ```testing.tfvars``` file
-
-```
-touch testing.tfvars
-```
-- Add the file for upload to the Remote repository
-```
-git add testing.tfvars
-```
-
-- Commit the changes for upload
-
-```
-git commit -m "forgotten file added"
-```
-- Push the files to the remote repository
-
-```
-git push --set-upstream origin addMissingFile
-```
-
-- Go to GitHub
-- Create a pull request
-- Merge the pull request
-
-- Go back to the local repository
 - Checkout to the master branch
 
 ```
