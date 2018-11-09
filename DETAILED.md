@@ -366,3 +366,45 @@ git checkout master
 ```
 git pull origin master
 ```
+- Create a new branch ```addMissingFile```
+```
+git checkout -b "addMissingFile"
+```
+
+- Create a ```testing.tfvars``` file
+
+```
+touch testing.tfvars
+```
+- Add the file for upload to the Remote repository
+```
+git add testing.tfvars
+```
+
+- Commit the changes for upload
+
+```
+git commit -m "forgotten file added"
+```
+- Push the files to the remote repository
+
+```
+git push --set-upstream origin addMissingFile
+```
+
+- Go to GitHub
+- Create a pull request
+- Merge the pull request
+
+- Go back to the local repository
+- Checkout to the master branch
+
+```
+git checkout master
+```
+
+- Pull the changes from the remote repository
+
+```
+git pull origin master
+```
