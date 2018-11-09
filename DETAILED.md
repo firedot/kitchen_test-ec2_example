@@ -1,5 +1,25 @@
 # This is a detailed description on the proccess of the creation of this repository
 
+## Before we start
+
+* **Some of the terms and commands that will be used are described here**
+* Remote repository is our VCS server (in this example GitHub).
+* The terms remote repository and GitHub will be used interchangebly from now on.
+* Local repository is the repository cloned from GitHub on our local machine.
+* Bundler is a tool that provides a consistent environment for Ruby projects by tracking and installing the exact gems (Ruby     software packages) and versions that are needed. Bundler itself comes as a gem.
+* A Gemfile is a list of Ruby software packages that will be installed with bundler.
+* ``` git add <some_file> ``` is an action that will prepare the content  that will be commited and eventually pushed to the remote repository
+* ``` git commit ``` is an action that records the changes to the repository
+* ``` git push ``` is an action that pushes the locally recorded repository changes to the remote repository
+
+* **Additional informational sources are provided below**
+
+* If you want further information on how to use git, you may find it [here](https://git-scm.com/docs)
+
+* You could find what a pull request is [here](https://help.github.com/articles/about-pull-requests/)
+* You could find how to create a pull request [here](https://help.github.com/articles/creating-a-pull-request/i)
+* You could find how to merge your pull request [here](https://help.github.com/articles/merging-a-pull-request/)
+
 - Create a new repository on GitHub called ```kitchen_test-ec2_example```
 
 - Clone the repository to your local machine
