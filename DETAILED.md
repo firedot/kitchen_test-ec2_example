@@ -17,7 +17,7 @@
 * If you want further information on how to use git, you may find it [here](https://git-scm.com/docs)
 
 * You could find what a pull request is [here](https://help.github.com/articles/about-pull-requests/)
-* You could find how to create a pull request [here](https://help.github.com/articles/creating-a-pull-request/i)
+* You could find how to create a pull request [here](https://help.github.com/articles/creating-a-pull-request/)
 * You could find how to merge your pull request [here](https://help.github.com/articles/merging-a-pull-request/)
 
 - Create a new repository on GitHub called ```kitchen_test-ec2_example```
